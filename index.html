@@ -92,46 +92,18 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 </style>
 <style>
 .hide{display:none!important}
-nav button{background:transparent;border:1px solid var(--amber);color:var(--amber);font:inherit;border-radius:99px;padding:2px 14px;cursor:pointer;white-space:nowrap;font-size:.9rem}
-nav button:hover{background:#1c3a52}
-#pbar{display:none}
-body.pres{overflow:hidden;font-size:1.12rem}
-body.pres nav{display:none}
-body.pres header.hero,body.pres section,body.pres footer{position:fixed;inset:0 0 54px 0;overflow-y:auto;max-width:none;margin:0;padding:40px max(20px,calc((100vw - 1040px)/2));background:var(--paper)}
-body.pres header.hero,body.pres footer{background:var(--ink)}
-body.pres .off{display:none!important}
-body.pres .g2:not(.keep){grid-template-columns:1fr}
-body.pres #pbar{display:flex;position:fixed;bottom:0;inset-inline:0;height:54px;background:#08151f;color:#dfe8ee;align-items:center;justify-content:center;gap:14px;z-index:20;font-size:.9rem}
-#pbar button{background:var(--amber);color:var(--ink);border:0;font:inherit;font-weight:600;border-radius:8px;padding:6px 18px;cursor:pointer}
-#pbar small{opacity:.7}
-@media(max-width:700px){#pbar small{display:none}}
 </style>
 </head>
 <body>
 <nav aria-label="أقسام الموقع">
 <a href="#top">البداية</a><a href="#intro">المقدمة</a><a href="#law1">المحور الأول</a><a href="#intl">المحور الثاني</a><a href="#balance">المحور الثالث</a><a href="#compare">المقارنة</a><a href="#conclusion">الخاتمة</a><a href="#quiz">الاختبار</a><a href="#files">التحميل</a><a href="#refs">المصادر</a>
-<button type="button" data-en style="margin-inline-start:auto">English</button><button type="button" data-pres>وضع العرض</button>
 </nav>
 
 <header class="hero" id="top"><div>
 <h1>بياناتك على الإنترنت… من يحميها؟</h1>
 <p>رحلة من الفضاء الرقمي المفتوح إلى القوانين التي تحاول أن تحميه من دون أن تخنق حرية الرأي. الضوابط التشريعية والأخلاقية للإعلام الرقمي: دراسة مقارنة بين التشريعات المحلية والاتفاقيات الدولية.</p>
-<p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px"><a class="go" href="#intro">ابدأ الرحلة</a><button class="go" type="button" data-pres>وضع العرض</button><button class="go" type="button" data-en>English</button></p>
+<p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px"><a class="go" href="#intro">ابدأ الرحلة</a></p>
 </div></header>
-
-<section id="en" class="hide" lang="en" dir="ltr">
-<span class="tag">English summary</span>
-<h2>Legislative and Ethical Controls of Digital Media</h2>
-<p class="sub">A comparative study of local legislation and international conventions</p>
-<p>Digital platforms have turned the internet into an open space where anyone can produce and publish content across borders. About 6 billion people used the internet worldwide in 2025 (74% of the global population), and Egypt had 95.94 million active mobile internet subscribers by November 2025. This openness strengthened freedom of expression, but it also brought fake news, hate speech, privacy violations and cybercrime.</p>
-<p style="margin:12px 0 20px"><b>Research question:</b> to what extent do Egyptian legislation and international conventions balance the protection of individuals and society against digital risks with the freedom of opinion and expression?</p>
-<div class="g2 keep">
-<div class="card"><h3>Axis 1: Egypt</h3><p>Law 175/2018 on combating information technology crimes and Law 151/2020 on personal data protection protect public order, privacy and personal data, and criminalize fake accounts and websites (Art. 24). Criticisms include broad terms such as "family values" (Art. 25), website blocking (Art. 7) and possible self-censorship among journalists. Law 151 exempts processing exclusively for media purposes, under conditions (Art. 3).</p></div>
-<div class="card"><h3>Axis 2: International conventions</h3><p>The Budapest Convention (opened 2001, in force 1 July 2004) is the first specialized treaty with wide legislative impact. Other pillars: the ITU Global Cybersecurity Agenda (2007), the Arab League model law (2004) and Arab convention, the GDPR (adopted 2016, applied 25 May 2018) as a global reference, and the UN Global Digital Compact (22 September 2024), a cooperation framework with goals toward 2030 rather than a criminalization treaty.</p></div>
-<div class="card"><h3>Axis 3: Freedom and restriction</h3><p>Balance is achieved neither by unrestricted freedom nor by absolute restrictions, but by clear legal and ethical frameworks that target harmful practices without touching the core of legitimate expression, supported by digital literacy and a continuing legislative and societal effort.</p></div>
-</div>
-<p style="margin-top:16px"><b>Conclusion:</b> "responsible freedom" is the cornerstone of contemporary media, and the integration of law and ethics ensures the sustainability and credibility of media work.</p>
-</section>
 
 
 <section id="intro">
@@ -272,7 +244,6 @@ body.pres #pbar{display:flex;position:fixed;bottom:0;inset-inline:0;height:54px;
 </section>
 <footer><div class="by"><b>إعداد</b><span>رقية طارق عبد العاطي</span><span>فاطمة ناصر علي الفيتوري</span><span>حبيبة أحمد زيدان</span><span>نعمات محمود فتحي</span><span>أروى عبد القوي سعيد</span></div><div class="by" style="margin-top:12px"><b>تحت إشراف</b><span>د. أميرة أحمد</span></div><div class="by" style="margin-top:12px"><b>آخر تحديث</b><span>8 نوفمبر 2026، الساعة 2:00 صباحا</span></div></footer>
 
-<div id="pbar"><button id="pp" type="button">السابق</button><span id="pc"></span><button id="pn" type="button">التالي</button><button id="px" type="button" style="background:#fff">خروج</button><small>السهم الأيسر: التالي، الأيمن: السابق، Esc: خروج</small></div>
 <script>
 // الميزان: الجانب الأثقل ينزل
 const bal=document.getElementById('bal'),sv=document.getElementById('sv'),vd=document.getElementById('verdict');
@@ -322,40 +293,5 @@ document.getElementById('why').textContent=(ok?'إجابة صحيحة. ':'ليس
 const n=document.getElementById('nx');n.textContent=qi<Q.length-1?'السؤال التالي':'اعرض النتيجة';n.classList.remove('hide');n.onclick=()=>{qi++;rq()};};
 o.append(b);});}
 rq();
-
-// ملخص إنجليزي
-function togEn(){const e=document.getElementById('en');e.classList.toggle('hide');const on=!e.classList.contains('hide');
-document.querySelectorAll('[data-en]').forEach(b=>b.textContent=on?'العربية':'English');
-if(on)e.scrollIntoView();else window.scrollTo(0,0);}
-document.querySelectorAll('[data-en]').forEach(b=>b.onclick=togEn);
-
-// وضع العرض
-let U=[],k=0,on=false;const pc=document.getElementById('pc');
-const SEC='header.hero,section,footer';
-function build(){U=[];document.querySelectorAll(SEC).forEach(sec=>{if(sec.classList.contains('hide'))return;
-const ch=[...sec.children],head=ch.filter(c=>c.matches('span.tag,h2'));let cur=[],n0=U.length;
-ch.forEach(c=>{if(head.includes(c))return;
-if(c.matches('.g2:not(.keep)')){if(cur.length)U.push({sec,head,els:cur});cur=[];[...c.children].forEach(d=>U.push({sec,head,els:[d],grid:c}));}
-else cur.push(c);});
-if(cur.length||U.length===n0)U.push({sec,head,els:cur});});}
-function show(){const u=U[k];document.querySelectorAll('.off').forEach(e=>e.classList.remove('off'));
-document.querySelectorAll(SEC).forEach(s=>{if(s!==u.sec)s.classList.add('off')});
-[...u.sec.children].forEach(c=>{if(!(u.head.includes(c)||u.els.includes(c)||c===u.grid))c.classList.add('off')});
-if(u.grid)[...u.grid.children].forEach(d=>{if(d!==u.els[0])d.classList.add('off')});
-u.sec.scrollTop=0;pc.textContent=(k+1)+' / '+U.length;}
-function go(d){if(!on)return;k=Math.max(0,Math.min(U.length-1,k+d));show();}
-function enter(){if(on)return;on=true;document.querySelectorAll('details').forEach(d=>d.open=true);
-document.body.classList.add('pres');build();k=0;show();
-try{const r=document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();if(r&&r.catch)r.catch(()=>{});}catch(e){}}
-function leave(){if(!on)return;on=false;document.body.classList.remove('pres');
-document.querySelectorAll('.off').forEach(e=>e.classList.remove('off'));
-if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen();}
-document.querySelectorAll('[data-pres]').forEach(b=>b.onclick=enter);
-document.getElementById('pn').onclick=()=>go(1);document.getElementById('pp').onclick=()=>go(-1);document.getElementById('px').onclick=leave;
-document.addEventListener('fullscreenchange',()=>{if(on&&!document.fullscreenElement)leave();});
-document.addEventListener('keydown',e=>{if(!on)return;
-if(e.key==='ArrowLeft'||e.key==='PageDown'){e.preventDefault();go(1);}
-else if(e.key==='ArrowRight'||e.key==='PageUp'){e.preventDefault();go(-1);}
-else if(e.key==='Escape')leave();});
 
 </script></body></html>
