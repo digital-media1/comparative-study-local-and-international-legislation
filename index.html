@@ -23,63 +23,39 @@ nav a:hover{background:#1c3a52}
 section{max-width:980px;margin:0 auto;padding:64px 20px}
 h1{font-weight:800;font-size:clamp(2rem,6vw,3.4rem);line-height:1.4}
 h2{font-weight:800;font-size:1.7rem;margin-bottom:8px}
+h3{font-weight:600;font-size:1.2rem;margin:22px 0 6px}
 .sub{color:#4b6275;max-width:60ch;margin-bottom:28px}
 .hero{background:var(--ink);color:#fff;max-width:none;padding:56px 20px 64px}
 .hero>div{max-width:980px;margin:auto}
 .hero p{color:#b9cad6;max-width:55ch}
-.scale{margin:36px auto 0;max-width:520px;text-align:center}
-.beam{height:8px;background:var(--amber);border-radius:4px;position:relative;transform:rotate(0);transition:transform .25s;margin:46px 0 0}
-.beam::before,.beam::after{content:"";position:absolute;top:8px;width:96px;height:42px;background:#1c3a52;border:2px solid var(--amber);border-top:0;border-radius:0 0 96px 96px}
-.beam::before{right:0}.beam::after{left:0}
-.beam b{position:absolute;top:-30px;font-weight:600;font-size:.8rem;color:var(--amber)}
-.beam b:first-child{right:6px}.beam b:last-child{left:6px}
-.post{width:10px;height:70px;background:var(--amber);margin:0 auto;border-radius:0 0 4px 4px}
-input[type=range]{width:100%;accent-color:var(--amber);margin-top:20px}
-#verdict{min-height:3.6em;font-weight:600;color:#fff}
-.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.num{border-top:4px solid var(--teal);padding-top:10px}
-.num strong{font-size:3rem;font-weight:800;line-height:1.2;display:block}
-.num span{color:#4b6275;font-size:.9rem}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.chips button,.opt{font:inherit;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:8px;padding:6px 14px;cursor:pointer}
-.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.chips button,.opt,.pick{font:inherit;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:8px;padding:6px 14px;cursor:pointer;text-align:right}
+.chips button[aria-pressed=true],.pick[aria-pressed=true]{background:var(--ink);color:#fff}
 .wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
 table{border-collapse:collapse;width:100%;min-width:640px;font-size:.92rem}
 th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
 th{background:var(--mist);font-weight:600}
 td:first-child{font-weight:600;background:#fafcfd;white-space:nowrap}
-.hide{display:none}
 .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3:first-child{margin-top:0}
 .opts{display:grid;gap:10px;margin:16px 0}
-.opt{text-align:right}
 .opt.ok{background:#d9f0e4;border-color:#1e8a55}
 .opt.no{background:#fbe0dc;border-color:#c0392b}
-#why{min-height:3em;margin-bottom:10px}
-.go{background:var(--teal);color:#fff;border:0;font:inherit;border-radius:8px;padding:8px 20px;cursor:pointer}
+.go{background:var(--teal);color:#fff;border:0;font:inherit;border-radius:8px;padding:8px 20px;cursor:pointer;text-decoration:none;display:inline-block}
 .vid{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:#000}
 .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .dl{display:flex;flex-wrap:wrap;gap:12px}
 .dl a{background:var(--ink);color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-weight:600}
 footer{background:var(--ink);color:#b9cad6;padding:32px 20px;font-size:.85rem}
 footer div{max-width:980px;margin:auto}
-footer a{color:var(--amber)}
-</style>
-<style>
-h3{font-weight:600;font-size:1.2rem;margin:22px 0 6px}
 ul{padding-inline-start:1.3em}li{margin:5px 0}
 .g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card h3:first-child{margin-top:0}
-.tl{border-inline-start:3px solid var(--teal);padding-inline-start:16px}
-.tl p{margin:0 0 12px}.tl b{color:var(--teal)}
 .hook{font-size:clamp(1.3rem,3.6vw,2.1rem);font-weight:800;line-height:1.7;max-width:22em}
 .tag{display:inline-block;background:var(--amber);border-radius:6px;padding:0 10px;font-weight:600;font-size:.85rem;margin-bottom:6px}
-.team{color:#b9cad6;font-size:.9rem;margin-top:22px}
-.go{text-decoration:none;display:inline-block}
 .sc{max-width:520px;margin:0 auto;text-align:center}.sc svg{width:100%}
 .ends{display:flex;justify-content:space-between;font-weight:600;direction:ltr}
+input[type=range]{width:100%;accent-color:var(--amber);margin-top:20px}
 .q ol{padding-inline-start:1.3em}
-</style>
-<style>
 .cap{color:#4b6275;font-size:.88rem}
 .arts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}.arts span{background:#fff;border:2px solid var(--teal);border-radius:10px;padding:6px 14px}.arts b{color:var(--teal)}
 .chp{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}.chp span{background:var(--mist);border-radius:99px;padding:3px 14px;font-size:.9rem}.chp.r span{background:var(--amber)}
@@ -89,14 +65,18 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 .refs{padding-inline-start:2em}.refs li{margin:8px 0;font-size:.9rem;word-break:break-word}
 .by{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;font-size:.95rem}.by b{color:var(--amber);font-size:1rem}
 #ring{transition:stroke-dasharray 1.4s ease}
-</style>
-<style>
+.lab{background:linear-gradient(135deg,#0e2233,#1c3a52);color:#fff;border-radius:14px;padding:24px}
+.lab h2{color:#fff}.lab .cap{color:#b9cad6}
+.picks{display:grid;gap:8px;margin:14px 0}.lab .pick{background:#ffffff14;color:#fff;border-color:#ffffff55}.lab .pick[aria-pressed=true]{background:var(--amber);color:var(--ink);border-color:var(--amber);font-weight:600}
+.sw{display:flex;align-items:center;gap:10px;margin:10px 0;font-weight:600}.sw input{width:22px;height:22px;accent-color:var(--amber);margin:0}
+#res{background:#fff;color:var(--ink);border-radius:10px;padding:16px;margin-top:12px;min-height:5em}
+.lw{display:inline-block;background:var(--teal);color:#fff;border-radius:8px;padding:2px 12px;margin:2px;font-weight:600;font-size:.9rem}.lw.ok{background:#1e8a55}
 .hide{display:none!important}
 </style>
 </head>
 <body>
 <nav aria-label="أقسام الموقع">
-<a href="#top">البداية</a><a href="#intro">المقدمة</a><a href="#law1">المحور الأول</a><a href="#intl">المحور الثاني</a><a href="#balance">المحور الثالث</a><a href="#compare">المقارنة</a><a href="#conclusion">الخاتمة</a><a href="#quiz">الاختبار</a><a href="#files">التحميل</a><a href="#refs">المصادر</a>
+<a href="#top">البداية</a><a href="#intro">المقدمة</a><a href="#law1">المحور الأول</a><a href="#lab">جرّبها بنفسك</a><a href="#intl">المحور الثاني</a><a href="#balance">المحور الثالث</a><a href="#compare">المقارنة</a><a href="#conclusion">الخاتمة</a><a href="#quiz">الاختبار</a><a href="#files">التحميل</a><a href="#refs">المصادر</a>
 </nav>
 
 <header class="hero" id="top"><div>
@@ -104,7 +84,6 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <p>رحلة من الفضاء الرقمي المفتوح إلى القوانين التي تحاول أن تحميه من دون أن تخنق حرية الرأي. الضوابط التشريعية والأخلاقية للإعلام الرقمي: دراسة مقارنة بين التشريعات المحلية والاتفاقيات الدولية.</p>
 <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px"><a class="go" href="#intro">ابدأ الرحلة</a></p>
 </div></header>
-
 
 <section id="intro">
 <span class="tag">المقدمة</span>
@@ -128,7 +107,6 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 </ol>
 <p><b>الأهمية:</b> تقديم قراءة مقارنة تربط التشريع المحلي بالمعايير الدولية، وتساعد الباحثين والإعلاميين وصناع القرار على فهم حدود الحرية وحدود القيد. <b>المنهج:</b> وصفي تحليلي مقارن.</p>
 </div>
-
 </section>
 <section id="video"><span class="tag">المقدمة</span><h2>مشهد يلخّص القصة</h2>
 <p>هذا الفيديو من قناة حقوق الإنسان التابعة لمجلس أوروبا (3 دقائق و20 ثانية)، ويتناول حماية البيانات الشخصية من المجرمين والمتطفلين، وكيف تحمي الاتفاقية 108 الفرد من إساءة استخدام بياناته.</p>
@@ -140,7 +118,7 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <section id="law1">
 <span class="tag">المحور الأول</span>
 <h2>التشريعات المصرية وعلاقتها بحرية التعبير</h2>
-<div class="arts"><span><b>م7</b> حجب المواقع</span><span><b>م24</b> الحسابات والمواقع المزيفة</span><span><b>م25</b> «القيم الأسرية»</span><span><b>م3 من قانون 151</b> استثناء الأغراض الإعلامية</span></div>
+<div class="arts"><span><b>م7</b> حجب المواقع</span><span><b>م24</b> الحسابات والمواقع المزيفة</span><span><b>م25</b> «القيم الأسرية»</span><span><b>م19 من قانون 180</b> الأخبار الكاذبة، وحسابات 5000 متابع</span><span><b>م3 من قانون 151</b> استثناء الأغراض الإعلامية</span></div>
 <div class="g2">
 <div class="card">
 <h3>قانون 175 لسنة 2018: مكافحة جرائم تقنية المعلومات</h3>
@@ -150,6 +128,13 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <details><summary>كيف نحقق التوازن؟</summary><ul><li>نصوص واضحة تحدد الأفعال المجرّمة بدقة.</li><li>تناسب بين المخالفة والعقوبة.</li><li>حق التقاضي والتظلم، ومنه قرارات الحجب.</li><li>حماية حق الصحفيين في النقد والنشر المشروع.</li><li>رفع الوعي القانوني وتدريب الإعلاميين.</li></ul></details>
 </div>
 <div class="card">
+<h3>قانون 180 لسنة 2018: تنظيم الصحافة والإعلام والمجلس الأعلى لتنظيم الإعلام</h3>
+<p>صدر في 27 أغسطس 2018 تنفيذا للمادة 211 من الدستور، ويخاطب الصحف ووسائل الإعلام والمواقع الإلكترونية، ويمتد جانب من أحكامه إلى الحسابات واسعة الانتشار.</p>
+<details open><summary>أبرز أحكامه المتصلة بالإعلام الرقمي</summary><ul><li>المجلس الأعلى لتنظيم الإعلام: يتلقى الشكاوى ويوقع الجزاءات، وتبدأ لائحة جزاءاته (مارس 2019) بلفت النظر والإنذار وتصل إلى الغرامات المالية.</li><li>م19: حظر الأخبار الكاذبة والتحريض على مخالفة القانون أو العنف أو الكراهية، والتمييز، والطعن في الأعراض، والسب والقذف، وامتهان الأديان.</li><li>يمتد الحظر إلى كل موقع أو مدونة أو حساب شخصي يبلغ متابعوه خمسة آلاف فأكثر، وللمجلس وقفه أو حجبه بقرار منه.</li><li>م18: مساءلة الصحفي تأديبيا أمام نقابته إذا أخل بواجباته أو بميثاق الشرف.</li></ul></details>
+<details><summary>التحديات والانتقادات</summary><ul><li>ربط الخضوع للتنظيم بعدد المتابعين يوسع نطاق الرقابة ليشمل أفرادا لا يمارسون مهنة إعلامية.</li><li>عبارة «الأخبار الكاذبة» تحتاج إلى تعريف منضبط يميز الخطأ حسن النية عن التضليل المتعمد.</li><li>قرار الوقف أو الحجب يصدر إداريا عن المجلس، فيصبح التظلم والرقابة القضائية ضمانة حاسمة للتناسب.</li><li>احتمال الرقابة الذاتية خوفا من الجزاء.</li></ul></details>
+<details><summary>كيف نحقق التوازن؟</summary><ul><li>تعريف دقيق للأخبار الكاذبة يشترط العلم بالكذب والضرر.</li><li>تسبيب قرارات الحجب والوقف وإتاحة التظلم منها أمام القضاء بسرعة.</li><li>تدرج الجزاءات بما يضمن التناسب.</li><li>تفعيل دور النقابة وميثاق الشرف في المساءلة المهنية.</li></ul></details>
+</div>
+<div class="card">
 <h3>قانون 151 لسنة 2020: حماية البيانات الشخصية</h3>
 <p>ينظم جمع البيانات الشخصية ومعالجتها وتداولها، ويمنع استخدامها بصورة غير مشروعة، ويعزز الثقة في التعاملات الرقمية.</p>
 <details open><summary>دوره في الخصوصية والأخلاق المهنية</summary><ul><li>احترام الخصوصية: لا جمع ولا معالجة ولا إفصاح دون موافقة صاحب البيانات إلا في الحالات التي يجيزها القانون.</li><li>الحفاظ على السرية وحماية البيانات من التسريب.</li><li>منع الاستغلال التجاري والإعلاني دون استيفاء الشروط.</li><li>المساءلة وعقوبات على المخالفين.</li></ul></details>
@@ -157,9 +142,17 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <details><summary>التحديات والانتقادات</summary><ul><li>احتمال تقييد العمل الصحفي عند نشر معلومات عن الشخصيات العامة.</li><li>تعارض الخصوصية مع حق الجمهور في كشف المخالفات وقضايا الفساد.</li><li>الرقابة الذاتية خوفا من المسؤولية.</li><li>تساؤلات حول صلاحيات الرقابة والتفتيش وتلقي الشكاوى.</li><li>صعوبة حماية الخصوصية دون أن تصير وسيلة لمنع النشر المشروع.</li></ul></details>
 <details><summary>كيف نحقق التوازن؟</summary><ul><li>مراعاة طبيعة العمل الصحفي والمصلحة العامة.</li><li>التمييز بين المعلومات الخاصة والمعلومات التي يخدم نشرها حق المعرفة.</li><li>الالتزام بمواثيق الشرف الإعلامي والتحقق من المعلومات.</li><li>ضمانات قانونية وإجرائية للنشر المشروع.</li><li>رفع وعي الصحفيين بحقوق الأفراد.</li></ul></details>
 </div></div>
-<div class="card" style="margin-top:16px"><details open><summary>توصيات المحور الأول</summary><ul><li>تطوير التشريعات بما يواكب التطور التكنولوجي ويحقق التوازن.</li><li>صياغة واضحة ومحددة تمنع التفسيرات الواسعة.</li><li>الموازنة بين حرية العمل الصحفي وحماية الخصوصية مع مراعاة حق الجمهور في المعرفة.</li><li>ضمانات تمنع إساءة استخدام القوانين في تقييد العمل الإعلامي المشروع.</li><li>رفع الوعي القانوني والأخلاقي لدى الصحفيين وصناع المحتوى.</li><li>نشر ثقافة المسؤولية الرقمية لدى الجمهور.</li></ul></details></div>
+<div class="card" style="margin-top:16px"><details><summary>مقارنة بين القوانين المصرية الثلاثة</summary>
+<div class="wrap" style="margin-top:10px"><table style="min-width:600px"><thead><tr><th>وجه المقارنة</th><th>قانون 175</th><th>قانون 180</th><th>قانون 151</th></tr></thead><tbody>
+<tr><td>الموضوع</td><td>الجرائم المرتكبة بتقنية المعلومات</td><td>تنظيم الصحافة والإعلام والمواقع</td><td>معالجة البيانات الشخصية</td></tr>
+<tr><td>الجهة المختصة</td><td>جهات التحقيق والمحاكم الجنائية</td><td>المجلس الأعلى لتنظيم الإعلام، والنقابة تأديبيا</td><td>مركز حماية البيانات الشخصية</td></tr>
+<tr><td>أبرز النصوص</td><td>م7 حجب، م24 حسابات مزيفة، م25 القيم الأسرية</td><td>م18 مساءلة تأديبية، م19 أخبار كاذبة وكراهية</td><td>م3 استثناء إعلامي، الموافقة وحقوق الأفراد</td></tr>
+<tr><td>نوع الإجراء</td><td>عقوبات جنائية وحجب</td><td>قرارات إدارية: إنذار وغرامة ووقف وحجب</td><td>عقوبات وتراخيص ورقابة</td></tr>
+<tr><td>خطر التقييد</td><td>اتساع المصطلحات (م25) والحجب (م7)</td><td>«الأخبار الكاذبة» ومعيار المتابعين والحجب الإداري</td><td>تعارض الخصوصية مع المصلحة العامة</td></tr>
+</tbody></table></div></details></div>
+<div class="card" style="margin-top:16px"><details open><summary>توصيات المحور الأول</summary><ul><li>تطوير التشريعات بما يواكب التطور التكنولوجي ويحقق التوازن.</li><li>صياغة واضحة ومحددة تمنع التفسيرات الواسعة.</li><li>الموازنة بين حرية العمل الصحفي وحماية الخصوصية مع مراعاة حق الجمهور في المعرفة.</li><li>ضمانات تمنع إساءة استخدام القوانين في تقييد العمل الإعلامي المشروع.</li><li>رفع الوعي القانوني والأخلاقي لدى الصحفيين وصناع المحتوى.</li><li>نشر ثقافة المسؤولية الرقمية لدى الجمهور.</li><li>توحيد ضمانات التظلم القضائي السريع لقرارات الحجب والوقف أيا كانت الجهة المصدرة لها.</li></ul></details></div>
 </section>
-<div class="card" id="awareness" style="margin-top:16px">
+<div class="card" id="awareness" style="margin-top:16px;max-width:940px;margin-inline:auto">
 <span class="tag">توصية وتطبيق عملي</span>
 <p style="font-weight:600">نوصي بضرورة تكثيف الجهود الرامية إلى نشر ثقافة المسؤولية الرقمية وتعزيز وعي الجمهور بأهمية حماية البيانات.</p>
 <p>وفي هذا السياق، نجد أن هناك بالفعل مؤسسات ومراكز تتبنى هذه المسؤولية وتسعى إلى تعزيز الوعي الرقمي لدى المجتمع، ومن بينها <b>مركز المعلومات ودعم اتخاذ القرار</b>، الذي تعاون مع الدكتورة سارة فوزي، عضو هيئة التدريس بكلية الإعلام – جامعة القاهرة، في إعداد برنامج بعنوان «Blind Spot»، يناقش قضية حماية البيانات في عصر الذكاء الاصطناعي.</p>
@@ -169,6 +162,16 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 </div>
 <p class="cap">   شاهد الفيديو مباشرة على <a href="https://www.facebook.com/reel/1520853893135413" target="_blank" rel="noopener">فيسبوك</a>.</p>
 </div>
+
+<section id="lab">
+<div class="lab"><span class="tag">نموذج تطبيقي</span><h2>جرّبها بنفسك: أنت صانع محتوى</h2>
+<p class="cap">اختر ماذا ستنشر، وحدّد حجم حسابك، وشاهد أي قانون يخصك.</p>
+<div class="picks" id="picks"></div>
+<label class="sw"><input type="checkbox" id="big"> حسابي عليه 5000 متابع فأكثر</label>
+<div id="res" aria-live="polite">اختر منشورًا من القائمة.</div>
+<p class="cap" style="margin-top:10px">تبسيط تعليمي لأغراض الدراسة، وليس رأيًا قانونيًا.</p></div>
+</section>
+
 <section id="intl">
 <span class="tag">المحور الثاني</span>
 <h2>الاتفاقيات الدولية وأثرها التشريعي</h2>
@@ -176,11 +179,16 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <h3>كيف بدأ التحرك الدولي؟</h3>
 <div class="strip" id="strip"></div>
 <div class="g2" style="margin-top:20px">
-<div class="card"><h3>اتفاقية بودابست 2001</h3><p>أول معاهدة دولية متخصصة ذات أثر تشريعي واسع في الجريمة الإلكترونية، جاءت استجابة لتنامي القرصنة والتجسس الإلكتروني والسرقات الرقمية وانتهاكات الملكية الفكرية.</p><ul><li>تنسيق الجهود وتعزيز التعاون الأمني والقضائي في التحقيقات العابرة للحدود.</li><li>توحيد التشريعات الوطنية بمعايير موضوعية وإجرائية مشتركة وسد الفجوات القانونية.</li><li>تعزيز الأمن السيبراني وتبادل المعلومات الأمنية وأفضل الممارسات.</li><li>شراكة بين الأجهزة الحكومية ومزودي الإنترنت والشركات التقنية الكبرى.</li></ul></div>
+<div class="card"><h3>اتفاقية بودابست 2001</h3><p>أول معاهدة دولية متخصصة ذات أثر تشريعي واسع في الجريمة الإلكترونية، جاءت استجابة لتنامي القرصنة والتجسس الإلكتروني والسرقات الرقمية وانتهاكات الملكية الفكرية.</p><ul><li>تنسيق الجهود وتعزيز التعاون الأمني والقضائي في التحقيقات العابرة للحدود.</li><li>توحيد التشريعات الوطنية بمعايير موضوعية وإجرائية مشتركة وسد الفجوات القانونية.</li><li>تعزيز الأمن السيبراني وتبادل المعلومات الأمنية وأفضل الممارسات.</li><li>شراكة بين الأجهزة الحكومية ومزودي الإنترنت والشركات التقنية الكبرى.</li></ul><p class="cap">بلغ عدد أطرافها 82 دولة حتى يوليو 2026، ولا تظهر مصر بينها في قوائم مجلس أوروبا.</p></div>
 <div class="card"><h3>الاتحاد الدولي للاتصالات</h3><p>بعد القمة العالمية لمجتمع المعلومات ومؤتمر المندوبين 2006، أُنيط به بناء الثقة والأمن في استخدام تكنولوجيا المعلومات. في مايو 2007 أطلق الأمين العام برنامج الأمن السيبراني العالمي (GCA)، وأكد مؤتمر 2010 أهميته (القرار 130).</p><p><b>خمسة مبادئ للسلام في الفضاء السيبراني:</b></p><ul><li>التزام الحكومات بحماية شعوبها في الفضاء السيبراني.</li><li>الحماية من التهديدات والهجمات.</li><li>عدم إيواء الإرهابيين والمجرمين السيبرانيين.</li><li>الامتناع عن شن هجمات على الدول الأخرى.</li><li>التعاون الدولي لضمان السلام والأمن.</li></ul></div>
-<div class="card"><h3>جامعة الدول العربية</h3><p>أصدرت عام 2004 قانونا استرشاديا لمكافحة جرائم تقنية المعلومات، ثم الاتفاقية العربية لمكافحة جرائم تقنية المعلومات لتعزيز التعاون وحماية أمن المجتمعات العربية. ودعا المجلس الدول المصدقة إلى مواءمة تشريعاتها وتجريم الصور المستحدثة من الجرائم الإلكترونية، ومنع الإرهابيين من استغلال الإنترنت.</p></div>
-<div class="card"><h3>اللائحة الأوروبية GDPR</h3><p>أقرها الاتحاد الأوروبي عام 2016 وبدأ تطبيقها في 25 مايو 2018، لحماية البيانات الشخصية وتنظيم جمعها واستخدامها وتخزينها.</p><p><b>6 مبادئ</b></p><div class="chp"><span>الشفافية والمشروعية</span><span>تحديد الغرض</span><span>تقليل البيانات</span><span>تأمين البيانات</span><span>تحديد مدة الاحتفاظ</span><span>المساءلة</span></div><p><b>حقوق الأفراد</b></p><div class="chp r"><span>الاطلاع</span><span>التصحيح</span><span>المحو</span><span>الاعتراض</span></div><p>مع غرامات كبيرة عند المخالفة.</p></div>
+<div class="card"><h3>جامعة الدول العربية</h3><p>أصدرت عام 2004 قانونا استرشاديا لمكافحة جرائم تقنية المعلومات، ثم الاتفاقية العربية لمكافحة جرائم تقنية المعلومات (القاهرة، ديسمبر 2010) لتعزيز التعاون وحماية أمن المجتمعات العربية. ودعا المجلس الدول المصدقة إلى مواءمة تشريعاتها وتجريم الصور المستحدثة من الجرائم الإلكترونية، ومنع الإرهابيين من استغلال الإنترنت.</p><p><b>وقد انضمت مصر إلى هذه الاتفاقية</b>، فهي الإطار المتخصص الأوثق صلة بها.</p></div>
+<div class="card"><h3>اللائحة الأوروبية GDPR</h3><p>أقرها الاتحاد الأوروبي عام 2016 وبدأ تطبيقها في 25 مايو 2018، لحماية البيانات الشخصية وتنظيم جمعها واستخدامها وتخزينها.</p><p><b>6 مبادئ</b></p><div class="chp"><span>الشفافية والمشروعية</span><span>تحديد الغرض</span><span>تقليل البيانات</span><span>تأمين البيانات</span><span>تحديد مدة الاحتفاظ</span><span>المساءلة</span></div><p><b>حقوق الأفراد</b></p><div class="chp r"><span>الاطلاع</span><span>التصحيح</span><span>المحو</span><span>الاعتراض</span></div><p>مع غرامات كبيرة عند المخالفة. وتلزم الدول بالتوفيق بين حماية البيانات وحرية التعبير ومنها الأغراض الصحفية (م85).</p></div>
 <div class="card"><h3>الاتفاق الرقمي العالمي 2024</h3><p>أُقر في 22 سبتمبر 2024 ضمن «ميثاق المستقبل» بقمة المستقبل في نيويورك، بمشاركة 193 دولة.</p><div class="chp"><span>سد الفجوة الرقمية</span><span>تعزيز الاقتصاد الرقمي</span><span>فضاء رقمي آمن (وحماية الأطفال)</span><span>حوكمة البيانات</span><span>حوكمة الذكاء الاصطناعي</span></div><p>ليس اتفاقية متخصصة في تجريم الأفعال أو تحديد العقوبات، ولا يحل محل الاتفاقيات الخاصة بمكافحة الجرائم. أهميته في وضع إطار مشترك لأهداف تسعى الدول إلى تحقيقها بحلول 2030.</p></div>
+<div class="card"><h3>اتفاقية الأمم المتحدة لمكافحة الجريمة السيبرانية 2024</h3><p>اعتمدتها الجمعية العامة في 24 ديسمبر 2024، وفُتح باب التوقيع عليها في هانوي في 25 أكتوبر 2025 ووقّعتها 65 دولة، وتدخل حيز النفاذ بعد 90 يوما من تصديق الدولة الأربعين. أول اتفاقية عالمية ملزمة في هذا المجال، ويلزم متابعة موقف مصر من التصديق عليها.</p></div>
+<div class="card"><h3>مصر والعالم: أين نتفق وأين نختلف؟</h3>
+<details open><summary>بودابست ↔ قانون 175</summary><p class="cap">نتفق في تجريم الدخول غير المشروع والاعتراض والمساس بالبيانات. ونختلف في أن 175 يضيف جرائم محتوى أوسع (م25)، بينما تشترط بودابست ضمانات لحقوق الإنسان والتناسب (م15).</p></details>
+<details><summary>GDPR ↔ قانون 151</summary><p class="cap">نتفق في الموافقة وحقوق الاطلاع والتصحيح والمحو والاستثناء الصحفي. ونختلف في أن القانون المصري يقوم على مركز إداري بصلاحيات ترخيص ورقابة، بينما تقوم اللائحة على سلطات رقابية مستقلة.</p></details>
+<details><summary>العهد الدولي ↔ قانون 180</summary><p class="cap">نتفق في حظر التحريض على الكراهية والعنف (م20). ونختلف في أن «الأخبار الكاذبة» بإطلاقها ليست أساسا مستقلا للتقييد وفق م19(3).</p></details></div>
 <div class="card"><details open><summary>توصيات المحور الثاني</summary><ul><li>آلية مؤسسية لتقييم توافق التشريعات المصرية مع المعايير الدولية.</li><li>إطار لتقييم ضمانات نقل البيانات الشخصية خارج الدولة، استرشادا بـ GDPR.</li><li>آلية لتبادل الخبرات التشريعية بين الدول العربية.</li><li>مؤشرات لقياس فاعلية التعاون الدولي (زمن الاستجابة، نسبة الطلبات المنجزة، حفظ الأدلة الرقمية).</li><li>دمج الحوكمة الرقمية وحماية الحقوق في سياسات مكافحة الجريمة.</li></ul></details></div>
 </div>
 </section>
@@ -201,6 +209,9 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <div class="card"><h3>خطاب الكراهية</h3><p>صارت الشبكة أداة سريعة لنشر الكراهية والتحريض والعنف بما يهدد السلم الأهلي. ويوصي تقرير اليونسكو بضوابط قانونية وأخلاقية لا تقتصر على التجريم، بل تعزز الوعي الرقمي وتفعّل دور المنصات.</p></div>
 <div class="card"><h3>«الحرية المسؤولة»</h3><p>يرى د. خالد غازي أن «طوفان المعلومات» فرض أخلاقيات جديدة، وأن الضوابط لا تقيّد حرية الإعلام بل تدعمها وتنقّي البيئة الإعلامية من المواد المسيئة. والتكامل بين القانون والأخلاق يمنح العمل الإعلامي الاستدامة والمصداقية، ويواجه الأخبار المفبركة والانحياز.</p></div>
 </div>
+<div class="card" style="margin-top:16px"><h3>متى يكون القيد مشروعا؟ الاختبار الثلاثي</h3>
+<details><summary>م19 من العهد الدولي للحقوق المدنية والسياسية</summary>
+<p>تجيز المادة 19(3) تقييد حرية التعبير بثلاثة شروط مجتمعة: <b>(1) الشرعية:</b> أن يكون القيد منصوصا عليه في القانون بوضوح كافٍ. <b>(2) الغاية المشروعة:</b> حقوق الآخرين وسمعتهم، أو الأمن القومي أو النظام العام أو الصحة أو الآداب. <b>(3) الضرورة والتناسب.</b> وتحظر م20(2) الدعوة إلى الكراهية التي تشكل تحريضا على التمييز أو العداوة أو العنف، وتحدد خطة عمل الرباط عتبة التحريض بستة عناصر: السياق، والمتحدث، والنية، والمضمون، والانتشار، واحتمال الضرر. وصدّقت مصر على العهد عام 1982، وتمنحه م93 من الدستور قوة القانون.</p></details></div>
 <div class="card" style="margin-top:16px"><h3>الخلاصة</h3><p>الدراسة الأكاديمية لجامعة الجزائر 3 ترى أن التحدي الأكبر أمام المشرّع العربي هو التوازن الدقيق: التشدد المفرط يحد من الإبداع ويخيف المنتقدين، وغياب التنظيم يفتح الباب لخطاب الكراهية والفوضى المعلوماتية. فالتوازن لا يتحقق بإطلاق الحرية دون ضوابط، ولا بقيود مطلقة، بل بأطر قانونية وأخلاقية واضحة تستهدف الممارسات الضارة دون المساس بجوهر الحق في التعبير المشروع، مع توعية رقمية وجهد تشريعي ومجتمعي مستمر.</p>
 <details open><summary>توصيات المحور الثالث</summary><ul><li>تطوير التشريعات بما يواكب التطور التكنولوجي ويحمي الحريات الأساسية.</li><li>ضوابط واضحة تستهدف الممارسات التي تنتهك حقوق الآخرين أو المصلحة العامة.</li><li>تفعيل المساءلة القانونية ضد الأخبار الكاذبة وخطاب الكراهية والتحريض وانتهاك الخصوصية.</li><li>ترسيخ المسؤولية الأخلاقية والاجتماعية واحترام الرأي الآخر والتحقق قبل التداول.</li><li>برامج للتربية الإعلامية والرقمية وتنمية التفكير النقدي.</li><li>تعاون بين الجهات التشريعية والمؤسسات الإعلامية والمنصات والمجتمع المدني.</li></ul></details></div>
 </section>
@@ -208,21 +219,25 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <section id="compare">
 <h2>المقارنة في جدول واحد</h2>
 <p class="sub">اختر محورا لتركز عليه، أو اعرض كل المحاور.</p>
-<div class="card" style="margin-bottom:16px"><p style="font-weight:600;margin-bottom:8px">قوة الإلزام في سطر واحد</p><div class="spec"><div style="background:#0f7b8a"><b>ملزم بعقوبات</b>قانون 175 وقانون 151 ولائحة GDPR</div><div style="background:#1d5f73"><b>معاهدة للدول الأطراف</b>اتفاقية بودابست</div><div style="background:#c7d2da;color:#0e2233"><b>إطار وأهداف</b>الاتفاق الرقمي العالمي (حتى 2030)</div></div></div>
+<div class="card" style="margin-bottom:16px"><p style="font-weight:600;margin-bottom:8px">قوة الإلزام في سطر واحد</p><div class="spec"><div style="background:#0f7b8a"><b>ملزم بعقوبات</b>قوانين 175 و180 و151 ولائحة GDPR</div><div style="background:#1d5f73"><b>معاهدة للدول الأطراف</b>بودابست، العهد الدولي، الاتفاقية العربية، اتفاقية الأمم المتحدة</div><div style="background:#c7d2da;color:#0e2233"><b>إطار وأهداف</b>الاتفاق الرقمي العالمي (حتى 2030)</div></div></div>
 <div class="chips" id="chips"></div>
 <div class="wrap"><table id="tbl"><thead><tr><th>القانون / الاتفاقية</th><th data-t="p">الخصوصية</th><th data-t="c">المحتوى والأخبار</th><th data-t="b">قوة الإلزام</th><th data-t="x">البيانات عبر الحدود</th></tr></thead><tbody>
 <tr><td>قانون 175 لسنة 2018 (مصر)</td><td data-t="p">يحد من الاستخدام غير المشروع للصور والمعلومات والبيانات.</td><td data-t="c">تجريم الحسابات والمواقع المزيفة (م24)، وحجب المواقع (م7).</td><td data-t="b">قانون وطني بعقوبات.</td><td data-t="x">يمتد نطاقه إلى بعض الأفعال المرتكبة خارج مصر.</td></tr>
+<tr><td>قانون 180 لسنة 2018 (مصر)</td><td data-t="p">يحظر الطعن في الأعراض والسب والقذف (م19).</td><td data-t="c">يحظر الأخبار الكاذبة والتحريض والكراهية، ويمتد إلى الحسابات بخمسة آلاف متابع فأكثر.</td><td data-t="b">قانون وطني: إنذار وغرامة ووقف وحجب.</td><td data-t="x">—</td></tr>
 <tr><td>قانون 151 لسنة 2020 (مصر)</td><td data-t="p">لا جمع ولا معالجة ولا إفصاح دون موافقة صاحب البيانات إلا في الحالات المصرح بها.</td><td data-t="c">تُستثنى المعالجة الحصرية للأغراض الإعلامية بشروط (م3).</td><td data-t="b">قانون وطني بعقوبات على المخالفين.</td><td data-t="x">ينظّم نقل البيانات خارج مصر.</td></tr>
 <tr><td>اتفاقية بودابست</td><td data-t="p">تركز على الجرائم الإلكترونية وليس على الخصوصية مباشرة.</td><td data-t="c">تواجه القرصنة والتجسس الإلكتروني والسرقات الرقمية.</td><td data-t="b">معاهدة ملزمة للدول الأطراف.</td><td data-t="x">تعاون أمني وقضائي في التحقيقات العابرة للحدود.</td></tr>
+<tr><td>الاتفاقية العربية 2010</td><td data-t="p">—</td><td data-t="c">تجريم جرائم تقنية المعلومات ومنع استغلالها في الإرهاب.</td><td data-t="b">اتفاقية إقليمية، انضمت إليها مصر.</td><td data-t="x">تعاون عربي في المكافحة.</td></tr>
 <tr><td>اللائحة الأوروبية GDPR</td><td data-t="p">شفافية وتقليل للبيانات وحقوق للأفراد (الاطلاع، التصحيح، المحو).</td><td data-t="c">تنظّم معالجة البيانات لا المحتوى.</td><td data-t="b">لائحة ملزمة داخل الاتحاد الأوروبي مع غرامات كبيرة.</td><td data-t="x">تقيّد نقل البيانات خارج الاتحاد الأوروبي إلا بضمانات.</td></tr>
+<tr><td>العهد الدولي للحقوق المدنية والسياسية</td><td data-t="p">م17 تحمي الحياة الخاصة.</td><td data-t="c">م19 تحمي التعبير بقيود مشروطة، وم20 تحظر التحريض على الكراهية.</td><td data-t="b">معاهدة صدّقت عليها مصر عام 1982.</td><td data-t="x">—</td></tr>
 <tr><td>الاتفاق الرقمي العالمي 2024</td><td data-t="p">يعزز حوكمة البيانات وحماية حقوق الإنسان على الإنترنت.</td><td data-t="c">يشجع على فضاء رقمي آمن وحماية الأطفال.</td><td data-t="b">إطار للتعاون وأهداف حتى 2030، وليس اتفاقية تجريم.</td><td data-t="x">يعزز الإدارة المسؤولة للبيانات وتبادلها.</td></tr>
+<tr><td>اتفاقية الأمم المتحدة 2024</td><td data-t="p">—</td><td data-t="c">الجرائم السيبرانية.</td><td data-t="b">معاهدة عالمية تدخل النفاذ بعد تصديق 40 دولة.</td><td data-t="x">تعاون قضائي وأمني عالمي.</td></tr>
 </tbody></table></div>
 </section>
 
 <section id="conclusion"><span class="tag">الخاتمة</span><h2>ماذا وجدنا؟</h2>
 <div class="g2 keep">
-<div class="card"><h3>في مصر</h3><p>قانونا 175 و151 يحميان المجتمع والخصوصية، لكن اتساع بعض المصطلحات والتوسع في التفسير قد يقيّدان العمل الصحفي. والحل في وضوح النصوص وتناسب العقوبات وضمانات التقاضي.</p></div>
-<div class="card"><h3>على المستوى الدولي</h3><p>اتفاقية بودابست أول معاهدة دولية متخصصة ذات أثر تشريعي واسع، واللائحة الأوروبية GDPR مرجع عالمي لحماية البيانات، والاتفاق الرقمي العالمي إطار للتعاون وليس اتفاقية تجريم.</p></div>
+<div class="card"><h3>في مصر</h3><p>قوانين 175 و180 و151 تحمي المجتمع والخصوصية وتنظم النشر، لكن اتساع بعض المصطلحات والتوسع في التفسير والحجب الإداري قد تقيّد العمل الصحفي. والحل في وضوح النصوص وتناسب العقوبات وضمانات التقاضي.</p></div>
+<div class="card"><h3>على المستوى الدولي</h3><p>اتفاقية بودابست أول معاهدة دولية متخصصة ذات أثر تشريعي واسع، واللائحة الأوروبية GDPR مرجع عالمي لحماية البيانات، والاتفاق الرقمي العالمي إطار للتعاون وليس اتفاقية تجريم، واتفاقية الأمم المتحدة 2024 مرجع جديد يلزم متابعته.</p></div>
 <div class="card"><h3>في التوازن</h3><p>لا يتحقق بإطلاق الحرية دون ضوابط ولا بقيود مطلقة، بل بأطر قانونية وأخلاقية واضحة تستهدف الممارسات الضارة دون المساس بجوهر التعبير المشروع.</p></div>
 </div></section>
 
@@ -239,7 +254,7 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <div class="card" style="margin-top:16px;background:var(--ink);color:#fff"><p style="font-size:1.15rem;font-weight:600">«الحرية المسؤولة» هي حجر الزاوية في الإعلام المعاصر، والتكامل بين القانون والأخلاق يضمن استدامة العمل الإعلامي ومصداقيته (د. خالد غازي).</p></div>
 </section>
 
-<section id="quiz"><span class="tag">اختبر نفسك</span><h2>6 أسئلة على ما قرأناه</h2>
+<section id="quiz"><span class="tag">اختبر نفسك</span><h2>8 أسئلة على ما قرأناه</h2>
 <div class="card" id="qz"></div>
 </section>
 
@@ -249,12 +264,38 @@ details{border-top:1px solid var(--line);padding:8px 0}summary{cursor:pointer;fo
 <div class="dl"><a href="files/research.docx.pdf" download>البحث كاملا (Word)</a><a href="files/presentation.pdf.pdf" download>العرض التقديمي (PDF)</a></div>
 </section>
 
-<section id="refs"><h2>المصادر</h2><p class="sub">كل المصادر التي اعتمد عليها البحث، بنفس أرقامها في الملف الكامل.</p><ol class="refs"><li value="1">مركز المعلومات ودعم اتخاذ القرار بمجلس الوزراء، تقرير تطور الخدمات الرقمية في مصر (بيانات الاتحاد الدولي للاتصالات ITU)، 14 سبتمبر 2026، نقلا عن موقع بنكي جيت. <a href="https://www.bankygate.com/77016" target="_blank" rel="noopener">الرابط</a></li><li value="2">الجهاز المركزي للتعبئة العامة والإحصاء (CAPMAS)، بيان اليوم العالمي للإنترنت الآمن، 10 فبراير 2026، ونقلته بوابة الشروق. <a href="https://www.shorouknews.com/news/view.aspx?cdate=10022026&id=8bc8ad8a-5725-4b24-b804-09ec13b116d9" target="_blank" rel="noopener">الرابط</a></li><li value="3">جمهورية مصر العربية، القانون رقم 175 لسنة 2018 بشأن مكافحة جرائم تقنية المعلومات، الجريدة الرسمية، العدد 32 مكرر (ج)، 14 أغسطس 2018. <a href="https://manshurat.org/node/31487" target="_blank" rel="noopener">الرابط</a></li><li value="4">جمهورية مصر العربية، القانون رقم 151 لسنة 2020 بإصدار قانون حماية البيانات الشخصية، الجريدة الرسمية، العدد 28 مكرر (هـ)، 15 يوليو 2020. <a href="https://amwalalghad.com/r3kp" target="_blank" rel="noopener">الرابط</a></li><li value="5">المجلس الأوروبي، اتفاقية بودابست لمكافحة الجرائم الإلكترونية، 2001. <a href="https://www.coe.int/web/cybercrime/the-budapest-convention" target="_blank" rel="noopener">الرابط</a></li><li value="6">الأمم المتحدة، الاتفاق الرقمي العالمي (ملحق ميثاق المستقبل، قرار الجمعية العامة 79/1)، 22 سبتمبر 2024. <a href="https://www.un.org/pact-for-the-future/en/annex-i-global-digital-compact" target="_blank" rel="noopener">الرابط</a></li><li value="7">الاتحاد الأوروبي، اللائحة العامة لحماية البيانات (GDPR)، رقم 2016/679، 27 أبريل 2016. <a href="https://www.eur-lex.europa.eu/eli/reg/2016/679" target="_blank" rel="noopener">الرابط</a></li><li value="8">جمهورية مصر العربية، القانون رقم 175 لسنة 2018 بشأن مكافحة جرائم تقنية المعلومات، الجريدة الرسمية، العدد 32، 14 أغسطس 2018. <a href="https://manshurat.org/node/31487" target="_blank" rel="noopener">الرابط</a></li><li value="9">مصطفى مظهر حمزة، التعاون الإقليمي في مكافحة الجرائم الإلكترونية نحو إطار قانوني جنائي مشترك، مجلة دجلة للعلوم الإنسانية، العدد 2، ص 253، 2026.</li><li value="10">اتفاقية مجلس أوروبا بشأن الجريمة الإلكترونية، مجلة بيركلي لقانون التكنولوجيا، 17(1)، 1-17، أرشيف LawCat - Berkeley Law.</li><li value="11">أميرة عبد العظيم، المخاطر السيبرانية وسبل مواجهتها في القانون الدولي العام، مجلة الشريعة والقانون، العدد 35، 2022، ص ص 494-495، 499.</li><li value="12">محمد سيد، تعزيز التعاون الدولي في مجال الجريمة الإلكترونية، المجلة القانونية، المجلد 24، العدد 5، 2025، ص 1998.</li><li value="13">الموقع الرسمي للاتحاد الأوروبي، اللائحة العامة لحماية البيانات، نُشر في 17 أبريل 2018. <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">الرابط</a></li><li value="14">موقع الأمم المتحدة، الأمم المتحدة تتبنى ميثاقا رائدا للمستقبل بهدف تغيير الحوكمة العالمية، 2 أكتوبر 2024. <a href="https://press.un.org/en/2024/ga12641.doc.htm" target="_blank" rel="noopener">الرابط</a></li><li value="15">ليلى عبد المجيد، التنظيم التشريعي والقانوني للإعلام التقليدي والإلكتروني، القاهرة: العربي للنشر والتوزيع، 2021.</li><li value="16">ليلى عبد المجيد، حرية الإعلام المعاصر: الحقوق والمسؤوليات، القاهرة: دار الشروق، 2021.</li><li value="17">خالد محمد غازي، إعلام المستقبل: إشكاليات أخلاقية وقانونية في الإعلام الجديد، وكالة الصحافة العربية، 2024.</li><li value="18">إغنيسو كاكاياردون وآخرون، مكافحة خطاب الكراهية على الإنترنت، سلسلة اليونسكو حول حرية الإنترنت، باريس، 2015.</li><li value="20">نصر الدين مزاري، الضوابط القانونية والتنظيمية للإعلام الإلكتروني في الوطن العربي: دراسة وصفية تحليلية مقارنة بين التشريعات الإعلامية في أربعة بلدان، أطروحة دكتوراه غير منشورة، جامعة الجزائر 3، 2018.</li></ol>
-</section>
+<section id="refs"><h2>المصادر</h2><p class="sub">كل المصادر التي اعتمد عليها البحث، بنفس أرقامها في الملف الكامل.</p><ol class="refs">
+<li value="1">مركز المعلومات ودعم اتخاذ القرار بمجلس الوزراء، تقرير تطور الخدمات الرقمية في مصر (بيانات الاتحاد الدولي للاتصالات ITU)، 14 سبتمبر 2026، نقلا عن موقع بنكي جيت. <a href="https://www.bankygate.com/77016" target="_blank" rel="noopener">الرابط</a></li>
+<li value="2">الجهاز المركزي للتعبئة العامة والإحصاء (CAPMAS)، بيان اليوم العالمي للإنترنت الآمن، 10 فبراير 2026، ونقلته بوابة الشروق. <a href="https://www.shorouknews.com/news/view.aspx?cdate=10022026&id=8bc8ad8a-5725-4b24-b804-09ec13b116d9" target="_blank" rel="noopener">الرابط</a></li>
+<li value="3">جمهورية مصر العربية، دستور جمهورية مصر العربية 2014 (المعدل عام 2019)، المواد 57 و65 و70 و71 و93 و211، الجريدة الرسمية.</li>
+<li value="4">جمهورية مصر العربية، القانون رقم 175 لسنة 2018 بشأن مكافحة جرائم تقنية المعلومات، الجريدة الرسمية، العدد 32 مكرر (ج)، 14 أغسطس 2018. <a href="https://manshurat.org/node/31487" target="_blank" rel="noopener">الرابط</a></li>
+<li value="5">جمهورية مصر العربية، القانون رقم 180 لسنة 2018 بإصدار قانون تنظيم الصحافة والإعلام والمجلس الأعلى لتنظيم الإعلام، الجريدة الرسمية، العدد 34 مكرر (هـ)، 27 أغسطس 2018، متاح عبر WIPO Lex. <a href="https://www.wipo.int/wipolex/en/legislation/details/19960" target="_blank" rel="noopener">الرابط</a></li>
+<li value="6">جمهورية مصر العربية، القانون رقم 151 لسنة 2020 بإصدار قانون حماية البيانات الشخصية، الجريدة الرسمية، العدد 28 مكرر (هـ)، 15 يوليو 2020. <a href="https://amwalalghad.com/r3kp" target="_blank" rel="noopener">الرابط</a></li>
+<li value="7">حماية البيانات الشخصية أثناء المعالجة في ضوء القانون رقم 151 لسنة 2020 واللائحة الأوروبية لعام 2016 (دراسة مقارنة)، بحث منشور عبر بنك المعرفة المصري (EKB). <a href="https://las.journals.ekb.eg/article_418741_1da843e47e1c475260bdb67deecdcf64.pdf" target="_blank" rel="noopener">الرابط</a></li>
+<li value="8">معهد الجزيرة للدراسات، «جزاءات الأعلى للإعلام في مصر.. مساحة الحرية الناقصة». <a href="https://institute.aljazeera.net/en/node/759" target="_blank" rel="noopener">الرابط</a></li>
+<li value="9">مصطفى مظهر حمزة، التعاون الإقليمي في مكافحة الجرائم الإلكترونية نحو إطار قانوني جنائي مشترك، مجلة دجلة للعلوم الإنسانية، العدد 2، ص 253، 2026.</li>
+<li value="10">اتفاقية مجلس أوروبا بشأن الجريمة الإلكترونية، مجلة بيركلي لقانون التكنولوجيا، 17(1)، 1-17، أرشيف LawCat - Berkeley Law.</li>
+<li value="11">مجلس أوروبا، اتفاقية بودابست لمكافحة الجرائم الإلكترونية (ETS No. 185) وبروتوكولها الإضافي، 2001. <a href="https://www.coe.int/web/cybercrime/the-budapest-convention" target="_blank" rel="noopener">الرابط</a> ؛ ومجلس أوروبا، فوائد الانضمام إلى اتفاقية بودابست، 1 يوليو 2026. <a href="https://rm.coe.int/cyber-buda-benefits-1-july-2026-en/48802c5c24" target="_blank" rel="noopener">الرابط</a></li>
+<li value="12">أميرة عبد العظيم، المخاطر السيبرانية وسبل مواجهتها في القانون الدولي العام، مجلة الشريعة والقانون، العدد 35، 2022، ص ص 494-495 و499.</li>
+<li value="13">محمد سيد، تعزيز التعاون الدولي في مجال الجريمة الإلكترونية، المجلة القانونية، المجلد 24، العدد 5، 2025، ص 1998.</li>
+<li value="14">صحيفة الوطن، «مصر تنضم لـ«الاتفاقية العربية لمكافحة جرائم تقنية المعلومات»». <a href="https://www.elwatannews.com/news/details/597051" target="_blank" rel="noopener">الرابط</a></li>
+<li value="15">الاتحاد الأوروبي، اللائحة العامة لحماية البيانات (GDPR)، رقم 2016/679، 27 أبريل 2016. <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">الرابط</a></li>
+<li value="16">الأمم المتحدة، الاتفاق الرقمي العالمي (ملحق ميثاق المستقبل، قرار الجمعية العامة 79/1)، 22 سبتمبر 2024. <a href="https://www.un.org/pact-for-the-future/en/annex-i-global-digital-compact" target="_blank" rel="noopener">الرابط</a></li>
+<li value="17">الأمم المتحدة، الأمم المتحدة تتبنى ميثاقا رائدا للمستقبل بهدف تغيير الحوكمة العالمية، 2 أكتوبر 2024. <a href="https://press.un.org/en/2024/ga12641.doc.htm" target="_blank" rel="noopener">الرابط</a></li>
+<li value="18">الأمم المتحدة في مصر، «فتح باب التوقيع على اتفاقية الأمم المتحدة لمكافحة الجريمة السيبرانية في هانوي»، بيان صحفي، 25 أكتوبر 2025. <a href="https://egypt.un.org/en/303974-un-convention-against-cybercrime-opens-signature-hanoi-viet-nam" target="_blank" rel="noopener">الرابط</a></li>
+<li value="19">الجمعية العامة للأمم المتحدة، العهد الدولي الخاص بالحقوق المدنية والسياسية، قرار 2200 ألف (د-21)، 1966، المادتان 19 و20.</li>
+<li value="20">اللجنة المعنية بحقوق الإنسان، التعليق العام رقم 34 بشأن المادة 19 (حرية الرأي وحرية التعبير)، الوثيقة CCPR/C/GC/34، 2011.</li>
+<li value="21">المقرر الخاص للأمم المتحدة المعني بحرية الرأي والتعبير ومنظمة الأمن والتعاون في أوروبا ومنظمة الدول الأمريكية واللجنة الأفريقية، الإعلان المشترك بشأن حرية التعبير و«الأخبار الكاذبة» والتضليل والدعاية، 3 مارس 2017.</li>
+<li value="22">مفوضية الأمم المتحدة السامية لحقوق الإنسان، خطة عمل الرباط بشأن حظر الدعوة إلى الكراهية القومية أو العنصرية أو الدينية، الوثيقة A/HRC/22/17/Add.4، 2012.</li>
+<li value="23">ليلى عبد المجيد، التنظيم التشريعي والقانوني للإعلام التقليدي والإلكتروني، القاهرة: العربي للنشر والتوزيع، 2021.</li>
+<li value="24">ليلى عبد المجيد، حرية الإعلام المعاصر: الحقوق والمسؤوليات، القاهرة: دار الشروق، 2021.</li>
+<li value="25">خالد محمد غازي، إعلام المستقبل: إشكاليات أخلاقية وقانونية في الإعلام الجديد، وكالة الصحافة العربية، 2024.</li>
+<li value="26">إغنيسو كاكاياردون وآخرون، مكافحة خطاب الكراهية على الإنترنت، سلسلة اليونسكو حول حرية الإنترنت، منظمة الأمم المتحدة للتربية والعلم والثقافة (اليونسكو)، باريس، 2015.</li>
+<li value="27">نصر الدين مزاري، الضوابط القانونية والتنظيمية للإعلام الإلكتروني في الوطن العربي: دراسة وصفية تحليلية مقارنة بين التشريعات الإعلامية في أربعة بلدان، أطروحة دكتوراه غير منشورة، كلية علوم الإعلام والاتصال، جامعة الجزائر 3، 2018.</li>
+</ol></section>
 <footer><div class="by"><b>إعداد</b><span>رقية طارق عبد العاطي</span><span>فاطمة ناصر علي الفيتوري</span><span>حبيبة أحمد زيدان</span><span>نعمات محمود فتحي</span><span>أروى عبد القوي سعيد</span></div><div class="by" style="margin-top:12px"><b>تحت إشراف</b><span>د. أميرة أحمد</span></div><div class="by" style="margin-top:12px"><b>آخر تحديث</b><span>8 نوفمبر 2026، الساعة 2:00 صباحا</span></div></footer>
 
 <script>
-// الميزان: الجانب الأثقل ينزل
 const bal=document.getElementById('bal'),sv=document.getElementById('sv'),vd=document.getElementById('verdict');
 function pan(x,y,t){return '<path d="M'+x+' '+y+'L'+(x-45)+' '+(y+55)+'M'+x+' '+y+'L'+(x+45)+' '+(y+55)+'" stroke="#0e2233" stroke-width="2"/><path d="M'+(x-55)+' '+(y+55)+'Q'+x+' '+(y+105)+' '+(x+55)+' '+(y+55)+'Z" fill="#e0a526" stroke="#0e2233" stroke-width="2"/><text x="'+x+'" y="'+(y+78)+'" text-anchor="middle" font-size="15" font-weight="600" fill="#0e2233">'+t+'</text>';}
 function tilt(){const v=+bal.value,a=(v-50)*0.24*Math.PI/180,c=Math.cos(a),s=Math.sin(a),px=260,py=50,h=170;
@@ -262,24 +303,32 @@ const lx=px-h*c,ly=py-h*s,rx=px+h*c,ry=py+h*s;
 sv.innerHTML='<line x1="260" y1="50" x2="260" y2="225" stroke="#0e2233" stroke-width="6"/><line x1="200" y1="225" x2="320" y2="225" stroke="#0e2233" stroke-width="8" stroke-linecap="round"/><line x1="'+lx+'" y1="'+ly+'" x2="'+rx+'" y2="'+ry+'" stroke="#0e2233" stroke-width="8" stroke-linecap="round"/><circle cx="260" cy="50" r="9" fill="#0f7b8a"/>'+pan(lx,ly,'ضوابط')+pan(rx,ry,'حرية');
 vd.textContent=v<35?'ضوابط مبالغ فيها: تقلّ حرية الإبداع والتعبير ويخاف المنتقدون من إبداء الرأي.':v>65?'حرية بلا ضوابط: يفتح الباب لخطاب الكراهية والفوضى المعلوماتية والتعدي على الحقوق.':'توازن: أطر واضحة تستهدف الممارسات الضارة دون المساس بجوهر الحق في التعبير.';}
 bal.addEventListener('input',tilt);tilt();
-// 2) العدادات
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
 const el=e.target,to=+el.dataset.to,d=+(el.dataset.dec||0),s=el.dataset.suf||'',t0=performance.now();
 (function f(t){const p=reduce?1:Math.min((t-t0)/1400,1);el.textContent=(to*p).toFixed(d)+s;if(p<1)requestAnimationFrame(f)})(t0);}));
 document.querySelectorAll('[data-to]').forEach(n=>io.observe(n));
-
-// 3) فلتر الجدول
 const topics=[['all','الكل'],['p','الخصوصية'],['c','المحتوى والأخبار'],['b','قوة الإلزام'],['x','البيانات عبر الحدود']];
 const chips=document.getElementById('chips');
 topics.forEach(([k,l],i)=>{const b=document.createElement('button');b.textContent=l;b.setAttribute('aria-pressed',i==0);
 b.onclick=()=>{chips.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));
 document.querySelectorAll('#tbl [data-t]').forEach(c=>c.classList.toggle('hide',k!=='all'&&c.dataset.t!==k));};chips.append(b);});
-
-const T=[['1989','مجلس أوروبا: توصية بشأن الجرائم المرتبطة بالحاسوب (غير ملزمة)'],['1990','قرار هافانا (الأمم المتحدة): تحديث القوانين وقبول الأدلة، وربطها بالخصوصية وحقوق الإنسان'],['1994','ريو دي جانيرو: مؤتمر الرابطة الدولية لقانون العقوبات'],['1997','براغ: وزراء العدل الأوروبيون يدعمون تقريب القوانين الجنائية'],['2000','لندن: تشجيع انضمام أكبر عدد من الدول وتعاون دولي سريع'],['2001','بودابست: فتح باب التوقيع (23 نوفمبر)','hl'],['2004','بودابست تدخل حيز النفاذ (1 يوليو)، وقانون عربي استرشادي'],['2007','الاتحاد الدولي للاتصالات: برنامج الأمن السيبراني العالمي'],['2018','GDPR يبدأ تطبيقه (25 مايو) بعد إقراره عام 2016'],['2024','الاتفاق الرقمي العالمي (22 سبتمبر)','hl']];
+const T=[['1989','مجلس أوروبا: توصية بشأن الجرائم المرتبطة بالحاسوب (غير ملزمة)'],['1990','قرار هافانا (الأمم المتحدة): تحديث القوانين وقبول الأدلة، وربطها بالخصوصية وحقوق الإنسان'],['1994','ريو دي جانيرو: مؤتمر الرابطة الدولية لقانون العقوبات'],['1997','براغ: وزراء العدل الأوروبيون يدعمون تقريب القوانين الجنائية'],['2000','لندن: تشجيع انضمام أكبر عدد من الدول وتعاون دولي سريع'],['2001','بودابست: فتح باب التوقيع (23 نوفمبر)','hl'],['2004','بودابست تدخل حيز النفاذ (1 يوليو)، وقانون عربي استرشادي'],['2007','الاتحاد الدولي للاتصالات: برنامج الأمن السيبراني العالمي'],['2010','الاتفاقية العربية لمكافحة جرائم تقنية المعلومات'],['2018','GDPR يبدأ تطبيقه (25 مايو) بعد إقراره عام 2016'],['2024','الاتفاق الرقمي العالمي (22 سبتمبر)، واعتماد اتفاقية الأمم المتحدة (24 ديسمبر)','hl'],['2025','فتح باب التوقيع على اتفاقية الأمم المتحدة في هانوي (25 أكتوبر)']];
 document.getElementById('strip').innerHTML=T.map(t=>'<div class="st'+(t[2]?' hl':'')+'"><b>'+t[0]+'</b>'+t[1]+'</div>').join('');
 setTimeout(()=>document.getElementById('ring').setAttribute('stroke-dasharray','232.5 314.2'),400);
-
+// النموذج التطبيقي
+const N={'180':'قانون 180 · تنظيم الإعلام','175':'قانون 175 · جرائم تقنية المعلومات','151':'قانون 151 · حماية البيانات'};
+const P=[
+['أنشر خبرا غير مؤكد عن شركة وأتركه ينتشر',['180'],'م19 من قانون 180 تحظر الأخبار الكاذبة على الحسابات بـ5000 متابع فأكثر، وللمجلس الأعلى وقف الحساب أو حجبه.',[],'قانون 180 لا ينطبق على حسابك بذاته، لكن تبقى المسؤولية العامة عن الإضرار بالغير.','تحقق من المصدر وصحّح الخبر إذا تبين خطؤه.'],
+['أنشر صورة موظف وبياناته وأتهمه بالفساد دون دليل',['180','175','151'],'م19 تحظر الطعن في الأعراض والأخبار الكاذبة، وقانون 175 يحمي حرمة الحياة الخاصة (م25)، وقانون 151 يمنع معالجة البيانات دون موافقة. والاستثناء الإعلامي (م3) مشروط بالغرض الإعلامي وصحة البيانات.',['175','151'],'قانون 180 لا ينطبق على حسابك بذاته، لكن قانونَي 175 و151 يخاطبان أي شخص.','الاتهام بلا دليل ونشر البيانات الخاصة أخطر ما يمكن أن تنشره.'],
+['أنشئ حسابا باسم فنان مشهور وأنشر باسمه',['175'],'م24 من قانون 175 تجرّم إنشاء حساب أو موقع ونسبته زورا إلى شخص، أيا كان عدد المتابعين.',['175'],'م24 من قانون 175 تجرّم إنشاء حساب أو موقع ونسبته زورا إلى شخص، أيا كان عدد المتابعين.','الحساب المزيف ليس مزحة.'],
+['أنتقد قرارا حكوميا بأسلوب محترم ومعلومات صحيحة',[],'هذا تعبير مشروع تحميه حرية الرأي (م65 من الدستور). القيود تستهدف الأخبار الكاذبة والتحريض والسب، لا النقد.',[],'هذا تعبير مشروع تحميه حرية الرأي (م65 من الدستور).','النقد المسؤول هو الحرية التي يحميها القانون.'],
+['أنشر منشورا يحرّض على كراهية فئة من الناس',['180'],'م19 تحظر التحريض والكراهية والتمييز على الحسابات بـ5000 متابع فأكثر، والعهد الدولي (م20) يحظر الدعوة إلى الكراهية التي تحرّض على العنف أو التمييز.',[],'قانون 180 لا ينطبق على حسابك بذاته، لكن المسؤولية الجنائية العامة تبقى قائمة، والمعيار الدولي يحظر التحريض.','التحريض على الكراهية ليس رأيا.']];
+const pk=document.getElementById('picks'),big=document.getElementById('big'),res=document.getElementById('res');let cur=-1;
+P.forEach((p,i)=>{const b=document.createElement('button');b.className='pick';b.setAttribute('aria-pressed',false);b.textContent=p[0];b.onclick=()=>{cur=i;pk.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));show()};pk.append(b)});
+function show(){if(cur<0)return;const p=P[cur],b=big.checked,l=b?p[1]:p[3],w=b?p[2]:p[4];
+res.innerHTML=(l.length?l.map(k=>'<span class="lw">'+N[k]+'</span>').join(''):'<span class="lw ok">لا مخالفة تنظيمية مباشرة</span>')+'<p style="margin:8px 0 4px">'+w+'</p><p class="cap"><b>الخلاصة:</b> '+p[5]+'</p>';}
+big.addEventListener('change',show);
 // الاختبار
 const Q=[
 ['جمعت شركة أرقام هواتف عملاء مصريين وأرسلت لهم إعلانات دون موافقتهم. ما القانون الأقرب؟',['قانون 175 لسنة 2018','قانون 151 لسنة 2020','اتفاقية بودابست','اللائحة الأوروبية GDPR'],1,'قانون 151 لسنة 2020 يمنع جمع ومعالجة البيانات دون موافقة صاحبها، وينظّم التسويق الإلكتروني.'],
@@ -287,14 +336,16 @@ const Q=[
 ['شركة تعالج بيانات مواطن في دولة من الاتحاد الأوروبي دون موافقة واضحة منه. ما الإطار الأقرب؟',['قانون 175 لسنة 2018','قانون 151 لسنة 2020','اتفاقية بودابست','اللائحة الأوروبية GDPR'],3,'GDPR تشترط موافقة واضحة، وتمنح الفرد حقوقا مثل الاطلاع والتصحيح والمحو والاعتراض.'],
 ['أي مادة في قانون 175 تجيز اتخاذ إجراءات حجب المواقع؟',['المادة 24','المادة 25','المادة 7','المادة 3'],2,'المادة 7 تجيز الحجب في حالات محددة، وتثير سؤال التناسب مع حق الجمهور في المعلومات.'],
 ['متى دخلت اتفاقية بودابست حيز النفاذ؟',['1989','2001','2004','2018'],2,'فُتح باب التوقيع في 23 نوفمبر 2001، ودخلت حيز النفاذ في 1 يوليو 2004.'],
-['ما الوصف الأدق للاتفاق الرقمي العالمي 2024؟',['لائحة أوروبية ملزمة بغرامات','اتفاقية تجرّم الأفعال وتحدد العقوبات','قانون وطني مصري','إطار تعاون وأهداف حتى 2030، وليس اتفاقية تجريم'],3,'يضع إطارا مشتركا للتعاون في التكنولوجيا والبيانات والذكاء الاصطناعي، ولا يحل محل اتفاقيات مكافحة الجرائم.']];
+['ما الوصف الأدق للاتفاق الرقمي العالمي 2024؟',['لائحة أوروبية ملزمة بغرامات','اتفاقية تجرّم الأفعال وتحدد العقوبات','قانون وطني مصري','إطار تعاون وأهداف حتى 2030، وليس اتفاقية تجريم'],3,'يضع إطارا مشتركا للتعاون في التكنولوجيا والبيانات والذكاء الاصطناعي، ولا يحل محل اتفاقيات مكافحة الجرائم.'],
+['مدوّن حسابه 6000 متابع نشر خبرا كاذبا. أي قانون يمنح المجلس الأعلى سلطة التدخل؟',['قانون 175 لسنة 2018','قانون 180 لسنة 2018','قانون 151 لسنة 2020','اتفاقية بودابست'],1,'م19 من قانون 180 تمتد إلى الحسابات بخمسة آلاف متابع فأكثر، وللمجلس الأعلى وقفها أو حجبها بقرار منه.'],
+['ما شروط القيد المشروع على حرية التعبير وفق العهد الدولي؟',['الشرعية والغاية المشروعة والتناسب','موافقة المجلس الأعلى فقط','أي قيد تراه الدولة مناسبا','لا يجوز أي قيد'],0,'م19(3): أن يكون منصوصا عليه في القانون، وأن يستهدف غاية مشروعة، وأن يكون ضروريا ومتناسبا.']];
 let qi=0,sc=0,ans=false;const qz=document.getElementById('qz');
 function rq(){ans=false;
-if(qi>=Q.length){const r=sc>=5?'ممتاز!':sc>=3?'جيد، راجعوا المحاور مرة أخرى.':'راجعوا المحاور وجرّبوا مرة أخرى.';
+if(qi>=Q.length){const r=sc>=7?'ممتاز!':sc>=4?'جيد، راجعوا المحاور مرة أخرى.':'راجعوا المحاور وجرّبوا مرة أخرى.';
 qz.innerHTML='<p style="font-size:1.6rem;font-weight:800">النتيجة: '+sc+' من '+Q.length+'</p><p>'+r+'</p><button class="go" id="rs" type="button">ابدأ من جديد</button>';
 document.getElementById('rs').onclick=()=>{qi=0;sc=0;rq()};return;}
 const q=Q[qi];
-qz.innerHTML='<p class="cap">السؤال '+(qi+1)+' من '+Q.length+'</p><p style="font-weight:600">'+q[0]+'</p><div class="opts"></div><p id="why"></p><button class="go hide" id="nx" type="button"></button>';
+qz.innerHTML='<p class="cap">السؤال '+(qi+1)+' من '+Q.length+'</p><p style="font-weight:600">'+q[0]+'</p><div class="opts"></div><p id="why" style="min-height:3em;margin-bottom:10px"></p><button class="go hide" id="nx" type="button"></button>';
 const o=qz.querySelector('.opts');
 q[1].forEach((t,k)=>{const b=document.createElement('button');b.className='opt';b.textContent=t;
 b.onclick=()=>{if(ans)return;ans=true;const ok=k===q[2];if(ok)sc++;b.classList.add(ok?'ok':'no');if(!ok)o.children[q[2]].classList.add('ok');
@@ -302,5 +353,6 @@ document.getElementById('why').textContent=(ok?'إجابة صحيحة. ':'ليس
 const n=document.getElementById('nx');n.textContent=qi<Q.length-1?'السؤال التالي':'اعرض النتيجة';n.classList.remove('hide');n.onclick=()=>{qi++;rq()};};
 o.append(b);});}
 rq();
-
-</script></body></html>
+</script>
+</body>
+</html>
